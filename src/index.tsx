@@ -1,18 +1,18 @@
-import { createRoot } from 'react-dom/client';
-import { App } from '~/components/app';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createRoot } from "react-dom/client";
+import { App } from "~/components/app";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const root = document.getElementById('root');
+const root = document.getElementById("root");
 
 if (!root) {
-  throw new Error('root not found');
+  throw new Error("root not found");
 }
 
 const container = createRoot(root);
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     children: [
       //   {
